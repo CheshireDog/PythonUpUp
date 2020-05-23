@@ -69,6 +69,7 @@ class Solution(object):
                             for q in range(p+1, len(dict[key])):
                                 ind1 = dict[key][p][0]
                                 ind2 = dict[key][p][1]
+                                ind3 = dict[key][q][0]
                                 result.append((nums[dict[key][p][0]], nums[dict[key][p][1]], nums[dict[key][q][0]],
                                                nums[dict[key][q][1]]))
                 else:
