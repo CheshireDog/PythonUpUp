@@ -25,7 +25,7 @@ class Solution(object):
 
     def combine_plus(self, pre_list, n, k):
         if len(pre_list[0]) < k:
-            print('ok')
+            print('ok!')
 
 
 if __name__ == '__main__':
