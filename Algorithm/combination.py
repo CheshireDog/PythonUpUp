@@ -9,7 +9,6 @@ Method：先得出选择两个的所有结果R2，对于长度加一的情形只
 
 import copy
 
-
 class Solution(object):
     def combine(self, n: int, k: int):
         result = []
