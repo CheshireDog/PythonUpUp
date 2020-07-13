@@ -15,7 +15,7 @@ class Solution(object):
         result = []
         if length < 4:
             return []
-        if length == 4 :
+        if length == 4:
             if sum(nums) == target:
                 return [nums]
             else:
