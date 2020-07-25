@@ -5,6 +5,7 @@ Author:hjh
 Date:07.09
 """
 
+
 class Solution(object):
     def array_sum(self, number_list):
         array_sums = [0]
@@ -12,6 +13,7 @@ class Solution(object):
         for i in range(len(number_list)):
             array_sums.append(number_list[i]+array_sums[i])
         return array_sums[1:]
+
 
 if __name__ == '__main__':
     numbers = [1,1,1,11,1]
