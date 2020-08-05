@@ -9,7 +9,6 @@
 # 找出出现次数最多的元素（最多者出现频数大于数组长度一半）
 class Solution:
     # 字典
-    
     def majorityElement(self, nums):
         dic = {}
         for i in nums:
