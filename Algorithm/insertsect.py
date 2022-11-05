@@ -27,9 +27,12 @@ class Solution:
                 else:
                     item_dict[i] += 1
             for j in nums2:
-                if j in item_dict and item_dict[j] > 1:
+                if j in item_dict and item_dict[j] >= 1:
                     item_dict[j] -= 1
+                # else:
+                #     del item_dict[j]
                     result.append(j)
+
         else:
             for i in nums2:
                 if not i in item_dict:
@@ -37,8 +40,10 @@ class Solution:
                 else:
                     item_dict[i] += 1
             for j in nums1:
-                if j in item_dict and item_dict[j] > 1:
+                if j in item_dict and item_dict[j] >= 1:
                     item_dict[j] -= 1
+                # else:
+                #     del item_dict[j]
                     result.append(j)
         return result
 

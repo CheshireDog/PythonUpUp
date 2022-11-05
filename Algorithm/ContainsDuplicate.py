@@ -10,14 +10,14 @@ class Solution:
     def containsDuplicate(self, nums) -> bool:
         num_dict = {}
         for i in nums:
-            if not i in num_dict:
+            if i not in num_dict:
                 num_dict[i] = 0
             else:
                 return True
         return False
 
+
 if __name__ == '__main__':
     so = Solution()
-    nums = [1,1,1,3,3,4,3,2,4,2]
+    nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
     print(so.containsDuplicate(nums))
-

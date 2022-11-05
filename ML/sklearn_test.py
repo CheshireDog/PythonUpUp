@@ -3,10 +3,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
+
 try:
     from scipy.special import comb
 except:
-     from scipy.misc import comb
+    from scipy.misc import comb
 
 # 生成伪随机数
 rng = np.random.RandomState(42)
